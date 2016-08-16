@@ -10,4 +10,27 @@
       <option name="COMPLETION" value="true" />
     </context>
   </template>
+  <template name="new_Instance" value="&#10;    public static PhotoGalleryFragment newInstance(){&#10;&#10;        Bundle args = new Bundle();&#10;&#10;        PhotoGalleryFragment pf = new PhotoGalleryFragment();&#10;        pf.setArguments(args);&#10;        return pf;&#10;    }&#10;    &#10;    private RecyclerView mRecyclerView;&#10;&#10;    @Nullable&#10;    @Override&#10;    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {&#10;        View v = inflater.inflate(R.layout.fragment_photo_gallery, container, false);&#10;        &#10;        mRecyclerView = (RecyclerView) v.findViewById(R.id.photo_gallery_recycler_view);&#10;        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));&#10;        return v;&#10;    }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="tag" value="private static final String TAG = &quot;$NAME$&quot;;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
 </templateSet>

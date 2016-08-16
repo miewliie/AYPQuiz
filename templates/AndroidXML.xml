@@ -6,4 +6,11 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="recy_cler_view" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;android.support.v7.widget.RecyclerView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:orientation=&quot;vertical&quot;&#10;    android:id=&quot;@+id/photo_gallery_recycler_view&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&gt;&#10;&#10;&lt;/android.support.v7.widget.RecyclerView&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
